@@ -12,6 +12,7 @@ langchain-openai = "^0.1.4"
 python-telegram-bot = "^21.1.1"
 python-dotenv = "^1.0.1"
 langchainhub = "^0.1.15"
+google-api-python-client = "^2.127.0"
 
 
 [build-system]

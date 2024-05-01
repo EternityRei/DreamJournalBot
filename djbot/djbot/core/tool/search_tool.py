@@ -1,6 +1,15 @@
 from langchain.tools import tool
+from langchain_community.utilities import GoogleSearchAPIWrapper
+
 
 @tool
-def search():
+def search(prompt: str):
     """Used to collect information all over the web based on provided queries"""
-    pass
+
+    google_search = GoogleSearchAPIWrapper()
+    results = google_search.results(
+        query=prompt,
+        num_results=10
+    )
+
+    return results
